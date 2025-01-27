@@ -33,8 +33,8 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/index',
-            from: '/docs/Introduction',
+            to: '/docs/Introduction/getting-started',
+            from: '/docs',
           },
           
         ],
