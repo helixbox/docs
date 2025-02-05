@@ -93,9 +93,9 @@ const FeatureList: FeatureItem[] = [
     description: 'Everything you need to know about your account',
     links: [
       { text: 'Getting Started', to: '/docs/Introduction/getting-started', emoji: '🎢' },
-      { text: 'Smart wallet or EOA', to: '/docs/smart-wallet', emoji: '💸' },
-      { text: 'Why Passkey?', to: '/docs/passkey', emoji: '🔑' },
-      { text: 'Privacy and Security', to: '/docs/privacy-security', emoji: '🔐' },
+      { text: 'Smart wallet VS EOA', to: '/docs/FAQs/smart-wallet-vs-eoa-wallet', emoji: '💸' },
+      { text: 'Why Passkey?', to: '/docs/Introduction/getting-started#why-passkey-seamlessly-login-cross-device', emoji: '🔑' },
+      { text: 'Privacy and Security', to: '/docs/Introduction/privacy-security', emoji: '🔐' },
     ],
   },
   {
@@ -103,9 +103,9 @@ const FeatureList: FeatureItem[] = [
     icon: '💱',
     description: 'Learn about trading and managing your funds',
     links: [
-      { text: 'Add Funds to your account', to: '/docs/add-funds' },
-      { text: 'Assets Swap', to: '/docs/assets-swap' },
-      { text: 'Cash out my Crypto', to: '/docs/cash-out' },
+      { text: 'Add Funds to your account', to: '/docs/funding/add-funds', emoji: '💳' },
+      { text: 'Assets Swap', to: '/docs/swap', emoji: '🔄' },
+      { text: 'Cash out my Crypto', to: '/docs/funding/cash-out-crypto', emoji: '💰' },
     ],
   },
   {
@@ -113,8 +113,8 @@ const FeatureList: FeatureItem[] = [
     icon: '📈',
     description: 'Explore our DeFi products and services',
     links: [
-      { text: 'DeFi Primary Product', to: '/docs/defi-products' },
-      { text: 'Dapps Markets', to: '/docs/dapps-markets' },
+      { text: 'DeFi Products', to: '/docs/DeFi/defi-products', emoji: '🏦' },
+      { text: 'Dapps Markets', to: '/docs/DeFi/dapps-markets', emoji: '🛍️' },
     ],
   },
 ];

@@ -1,5 +1,6 @@
 {
     "label": "Funding",
+    "description": "Learn how to add funds to your Helixbox account using various payment methods",
     "position": 2,
     "link": {
       "type": "generated-index"
