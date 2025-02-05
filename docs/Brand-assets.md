@@ -12,11 +12,8 @@ description: Official Helixbox brand guidelines, logos, and marketing materials
 
 Helixbox represents innovation, security, and accessibility in DeFi. Our brand elements are designed to convey trust, technology, and user-friendliness.
 
-## Logo Usage {#logos}
+## Full Logo & Assets
 
-### Primary Logo
-
-#### Full Logo
 - [Download SVG →](/assets/Logo.svg)
 - [Download PNG →](/assets/Logo.png)
 - [Download Dark →](/assets/Logo-rect.png)

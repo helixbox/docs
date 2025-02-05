@@ -33,12 +33,17 @@ details > summary:first-of-type {
   --ifm-color-primary-lighter: #1e90fb;
   --ifm-color-primary-lightest: #3a9efc;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-color-content-secondary:#ffffffb3;
+  --ifm-color-secondary:#ffffffb3;
+  /* --ifm-color-content-secondary:#ffffffb3;
+  --ifm-color-content-secondary */
+
 
 }
 .footer--dark {
   --ifm-footer-background-color:#080B13;
-  --ifm-footer-link-color:#ffffffb3;
+  --ifm-color-content-secondary: #525860;
+  --ifm-color-secondary:#ffffffb3;
+  /* --ifm-footer-link-color:#ffffffb3; */
 }
 .footer__copyright{
   color: var(--ifm-color-content-secondary);

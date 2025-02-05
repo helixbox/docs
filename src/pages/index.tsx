@@ -15,7 +15,7 @@ const styles = {
   banner: {
     backgroundColor: 'var(--ifm-color-primary)',
     color: '#fff',
-    padding: '4rem 0',
+    padding: '2rem',
     textAlign: 'center',
     position: 'relative',
     overflow: 'hidden',
@@ -187,48 +187,87 @@ function HomepageHeader() {
   useDocSearchKeyboardEvents({isOpen, onOpen, onClose});
 
   return (
-    <header className={clsx('banner banner--primary', styles.banner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p>How can we help you?</p>
-        <DocSearchButton
-          onTouchStart={importDocSearchModalIfNeeded}
-          onFocus={importDocSearchModalIfNeeded}
-          onMouseOver={importDocSearchModalIfNeeded}
-          onClick={onOpen}
-        />
-        {isOpen &&
-          createPortal(
-            <DocSearchModal
-              onClose={onClose}
-              initialScrollY={window.scrollY}
-              navigator={{
-                navigate({suggestionUrl}) {
-                  history.push(suggestionUrl);
-                },
-              }}
-              transformItems={(items) => {
-                return items.map((item) => {
-                  const a = document.createElement('a');
-                  a.href = item.url;
-                  return {
-                    ...item,
-                    url: withBaseUrl(`${a.pathname}${a.hash}`),
-                  };
-                });
-              }}
-              hitComponent={Hit}
-              resultsFooterComponent={(footerProps) => (
-                <ResultsFooter {...footerProps} onClose={onClose} />
-              )}
-              {...siteConfig.themeConfig.algolia as any} 
-            />,
-            document.body,
-          )}
-      </div>
-    </header>
+   <> <header className={clsx('banner banner--primary')} style={ styles.banner}>
+   <div className="container">
+     <Heading as="h1" className="hero__title" style={{
+       fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+       textAlign: 'center'
+     }}>
+       {siteConfig.title}
+     </Heading>
+     <p className="hero__subtitle" style={{
+       fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
+       color: 'var(--ifm-color-emphasis-700)',
+       fontWeight: '500',
+       maxWidth: '800px',
+       margin: '0 auto 0',
+       textAlign: 'center',
+       padding: '0 1rem'
+     }}>
+       The smart and easy way to DeFi!
+     </p>
+   </div>
+ </header>
+<div>
+     <h2 className="hero__description" style={{
+       color: 'var(--ifm-color-emphasis-600)',
+       maxWidth: '600px',
+       margin: ' 2rem auto',
+       textAlign: 'center',
+       padding: '0 1rem'
+     }}>
+How can we help you?     </h2>
+     <div style={{ 
+       maxWidth: '600px',
+       margin: '0 auto',
+       padding: '0 1rem',
+       display: 'flex',
+       justifyContent: 'center'
+     }}>
+       <DocSearchButton
+         onTouchStart={importDocSearchModalIfNeeded}
+         onFocus={importDocSearchModalIfNeeded}
+         onMouseOver={importDocSearchModalIfNeeded}
+         onClick={onOpen}
+         style={{
+          width: '100%',
+          height: 'clamp(40px, 6vw, 50px)',
+          fontSize: 'clamp(1rem, 2vw, 1.2rem)',
+          padding: 'clamp(0.6rem, 2vw, 0.8rem) clamp(1rem, 3vw, 1.5rem)',
+          borderRadius: '8px',
+          maxWidth:600,
+        }}
+       />
+     </div></div>
+ {isOpen &&
+   createPortal(
+     <DocSearchModal
+       onClose={onClose}
+       initialScrollY={window.scrollY}
+       navigator={{
+         navigate({suggestionUrl}) {
+           history.push(suggestionUrl);
+         },
+       }}
+       transformItems={(items) => {
+         return items.map((item) => {
+           const a = document.createElement('a');
+           a.href = item.url;
+           return {
+             ...item,
+             url: withBaseUrl(`${a.pathname}${a.hash}`),
+           };
+         });
+       }}
+       hitComponent={Hit}
+       resultsFooterComponent={(footerProps) => (
+         <ResultsFooter {...footerProps} onClose={onClose} />
+       )}
+       {...siteConfig.themeConfig.algolia as any} 
+     />,
+     document.body,
+   )}
+ </>
   );
 }
 

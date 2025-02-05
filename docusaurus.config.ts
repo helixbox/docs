@@ -125,7 +125,7 @@ const config: Config = {
        { title: " ",
         items: [
           { 
-            html:`<a href="https://app.helix.box" alt="Helixbox"><img src="img/logo.png" alt="Helixbox" height="22" />
+            html:`<a href="https://app.helix.box" alt="Helixbox"><img src="/img/logo.png" alt="Helixbox" height="22" />
             </a>`, // title: "App",
             // items: [
             //   {
