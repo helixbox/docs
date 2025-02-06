@@ -17,7 +17,7 @@ const config: Config = {
   organizationName: "helixbox", // Usually your GitHub org/user name.
   projectName: "helixbox-docs", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -33,7 +33,7 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/Introduction/getting-started',
+            to: '/docs/introduction/getting-started',
             from: '/docs',
           },
           

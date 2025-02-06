@@ -92,10 +92,10 @@ const FeatureList: FeatureItem[] = [
     icon: '👤',
     description: 'Everything you need to know about your account',
     links: [
-      { text: 'Getting Started', to: '/docs/Introduction/getting-started', emoji: '🎢' },
-      { text: 'Smart wallet VS EOA', to: '/docs/FAQs/smart-wallet-vs-eoa-wallet', emoji: '💸' },
-      { text: 'Why Passkey?', to: '/docs/Introduction/getting-started#why-passkey-seamlessly-login-cross-device', emoji: '🔑' },
-      { text: 'Privacy and Security', to: '/docs/Introduction/privacy-security', emoji: '🔐' },
+      { text: 'Getting Started', to: '/docs/introduction/getting-started', emoji: '🎢' },
+      { text: 'Smart wallet VS EOA', to: '/docs/faqs/smart-wallet-vs-eoa-wallet', emoji: '💸' },
+      { text: 'Why Passkey?', to: '/docs/introduction/getting-started#why-passkey-seamlessly-login-cross-device', emoji: '🔑' },
+      { text: 'Privacy and Security', to: '/docs/introduction/privacy-security', emoji: '🔐' },
     ],
   },
   {
@@ -113,8 +113,8 @@ const FeatureList: FeatureItem[] = [
     icon: '📈',
     description: 'Explore our DeFi products and services',
     links: [
-      { text: 'DeFi Products', to: '/docs/DeFi/defi-products', emoji: '🏦' },
-      { text: 'Dapps Markets', to: '/docs/DeFi/dapps-markets', emoji: '🛍️' },
+      { text: 'DeFi Products', to: '/defi-premium', emoji: '🏦' },
+      { text: 'Dapps Markets', to: '/defi-premium', emoji: '🛍️' },
     ],
   },
 ];
