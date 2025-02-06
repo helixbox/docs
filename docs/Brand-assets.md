@@ -18,7 +18,8 @@ Helixbox represents innovation, security, and accessibility in DeFi. Our brand e
 - [Download PNG →](/assets/Logo.png)
 - [Download Dark →](/assets/Logo-rect.png)
 - [Download With Label →](/assets/logo-with-label.png)
-- [Full assets →](/assets/Brand.zip)
+- [Download all assets](/assets/Brand.zip)
+
 
 <div className="logo-showcase" style={{ padding: "2rem", backgroundColor: "#FFFFFF", borderRadius: "8px", marginBottom: "1rem" }}>
 
