@@ -197,7 +197,6 @@ function HomepageHeader() {
      </Heading>
      <p className="hero__subtitle" style={{
        fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
-       color: 'var(--ifm-color-emphasis-700)',
        fontWeight: '500',
        maxWidth: '800px',
        margin: '0 auto 0',
@@ -210,7 +209,6 @@ function HomepageHeader() {
  </header>
 <div>
      <h2 className="hero__description" style={{
-       color: 'var(--ifm-color-emphasis-600)',
        maxWidth: '600px',
        margin: ' 2rem auto',
        textAlign: 'center',
@@ -290,7 +288,7 @@ export default function Home(): ReactNode {
             <div className="col col--6">
               <p>Can't find what you are looking for?</p>
               <Link
-                to="mailto:support@helix.box"
+                to="mailto:hello@helix.box"
                 className="button button--primary"
                 style={styles.actionButton}
               >
