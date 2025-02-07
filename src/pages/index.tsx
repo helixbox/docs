@@ -92,9 +92,9 @@ const FeatureList: FeatureItem[] = [
     icon: '👤',
     description: 'Everything you need to know about your account',
     links: [
-      { text: 'Getting Started', to: '/docs/Introduction/getting-started', emoji: '🎢' },
-      { text: 'Smart wallet VS EOA', to: '/docs/faqs/smart-wallet-vs-eoa-wallet', emoji: '💸' },
-      { text: 'Why Passkey?', to: '/docs/Introduction/getting-started#why-passkey-seamlessly-login-cross-device', emoji: '🔑' },
+      { text: 'Getting Started', to: '/docs/introduction/getting-started', emoji: '🎢' },
+      { text: 'Smart wallet VS EOA', to: '/docs/FAQs/smart-wallet-vs-eoa-wallet', emoji: '💸' },
+      { text: 'Why Passkey?', to: '/docs/introduction/getting-started#why-passkey-seamlessly-login-cross-device', emoji: '🔑' },
       { text: 'Privacy and Security', to: '/docs/introduction/privacy-security', emoji: '🔐' },
     ],
   },
