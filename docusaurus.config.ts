@@ -33,7 +33,7 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/introduction/getting-started',
+            to: '/',
             from: '/docs/',
           },
           
@@ -90,16 +90,6 @@ const config: Config = {
           baseUrl: '/docs/',
           to: '/docs/index',
         },
-        // {
-        //   to: 'pages/introduction',
-  
-        //   label: 'Introduction',
-        //   // Only one of "label" or "html" should be used
-        //   // html: '<b>Introduction</b>'
-        //   position: 'left',
-        //   activeBaseRegex: 'docs/(next|v8)',
-        //   target: '_blank',
-        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           label: "GitHub",
