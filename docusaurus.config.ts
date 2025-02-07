@@ -33,7 +33,7 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/Introduction/getting-started',
+            to: '/docs/introduction/getting-started',
             from: '/docs',
           },
           
