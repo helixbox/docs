@@ -1,7 +1,7 @@
 {
     "label": "DeFi Premium",
     "position": 5,
-    "link": {
+     "link": {
       "type": "generated-index",
       "description":"DeFi Premium"    
     }
