@@ -35,10 +35,10 @@ export default function LayoutWrapper(props: Props): ReactNode {
     };
   }
   useScript("https://dify-darwinia.vercel.app/embed.min.js");
-  // {/* <!-- Start of testitering Zendesk Widget script --> */ }
-  useScript("https://static.zdassets.com/ekr/snippet.js?key=3d2e9764-aa77-4889-a192-edbc23f5b09c");
-  // {/* <!-- End of testitering Zendesk Widget script --> */ }
-  useScript('//fw-cdn.com/12444885/4859742.js');
+  // // {/* <!-- Start of testitering Zendesk Widget script --> */ }
+  // useScript("https://static.zdassets.com/ekr/snippet.js?key=3d2e9764-aa77-4889-a192-edbc23f5b09c");
+  // // {/* <!-- End of testitering Zendesk Widget script --> */ }
+  // useScript('//fw-cdn.com/12444885/4859742.js');
 
   return (
     <>

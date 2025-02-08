@@ -1,6 +1,6 @@
 ---
 id: blog-home
-title: comming soon
+title: coming soon
 ---
 
-# comming soon
+# coming soon
