@@ -300,7 +300,11 @@ export default function Home(): ReactNode {
             <div className="col col--6">
               <p><strong>Ask our AI agent for help?</strong></p>
               <button
-                onClick={() => {}}
+                onClick={() => {
+                  /** open AI plugin */
+                  //@ts-ignore
+                  window?.fcWidget?.open();
+                }}
                 className="button button--secondary"
                 style={styles.actionButton}
               >

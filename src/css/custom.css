@@ -36,7 +36,7 @@ details > summary:first-of-type {
   --ifm-color-secondary:#ffffffb3;
   /* --ifm-color-content-secondary:#ffffffb3;
   --ifm-color-content-secondary */
-
+ 
 
 }
 .footer--dark {
@@ -48,4 +48,22 @@ details > summary:first-of-type {
 .footer__copyright{
   color: var(--ifm-color-content-secondary);
   text-align: left;
+}
+#dify-chatbot-bubble-button {
+  background-color: var(--ifm-color-primary) !important;
+}
+#dify-chatbot-bubble-window {
+  width: 24rem !important;
+  height: 40rem !important;
+}
+#launcher {
+  top: 60%;
+}
+
+#fc_frame {
+  right: 15px;
+  
+}
+#fc_frame .d-hotline{
+  background-color: var(--ifm-color-primary) !important;
 }
