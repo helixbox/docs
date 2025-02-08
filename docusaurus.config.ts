@@ -2,7 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
-  title: "Helixbox Labs",
+  title: "Helixbox Labs Documents",
   tagline: "Helixbox Docs",
   favicon: "img/favicon.ico",
 
@@ -72,6 +72,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+  
     // Replace with your project's social card
     navbar: {
       title: "",
