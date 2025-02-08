@@ -105,24 +105,18 @@ const config: Config = {
       ],
     },
     footer: {
-      // logo: {
-      //   alt: 'HelixBox Labs',
-      //   src: 'img/logo.svg',
-      //   href: 'https://app.helix.box',
-      //   width: 160,
-      //   height: 51,
-      // },
+    
       style: "dark",
       links: [
        { title: " ",
         items: [
           { 
-            html:`<a href="https://app.helix.box" alt="Helixbox"><img src="/img/logo.png" alt="Helixbox" height="22" />
+            html:`<a href="https://helix.box" alt="Helixbox"><img src="/img/logo.png" alt="Helixbox" height="22" />
             </a>`, // title: "App",
             // items: [
             //   {
             //     label: "Helixbox",
-            //     to: "https://app.helix.box",
+            //     to: "https://helix.box",
             //   },
             // ],
           },
@@ -136,7 +130,7 @@ const config: Config = {
         items: [
           {
             label: "Helixbox",
-            to: "https://app.helix.box/",
+            to: "https://helix.box/",
           },
           {
             label: "Bridge",
@@ -178,19 +172,19 @@ const config: Config = {
           items: [
             {
               label: "Privacy Policy",
-              to: "https://app.helix.box/docs/Privacy_Policy.html",
+              to: "https://helix.box/docs/Privacy_Policy.html",
             },
             {
               label: "Terms of Use",
-              to: "https://app.helix.box/docs/Terms_of_Use.html",
+              to: "https://helix.box/docs/Terms_of_Use.html",
             },
             {
               label: "Cookies Policy",
-              to: "https://app.helix.box/docs/Cookies_Policy.html",
+              to: "https://helix.box/docs/Cookies_Policy.html",
             },
             {
               label: "3rd Party Services",
-              to: "https://app.helix.box/docs/3rd_Party_Services.html",
+              to: "https://helix.box/docs/3rd_Party_Services.html",
             },
           ],
         },
