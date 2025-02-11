@@ -14,9 +14,9 @@ Helixbox represents innovation, security, and accessibility in DeFi. Our brand e
 
 ## Full Logo & Assets
 
-- [Download SVG →](./assets/Logo.svg)
-- [Download PNG →](./assets/Logo.png)
-- [Download Dark →](./assets/Logo-rect.png)
+- [Download SVG →](./assets/logo.svg)
+- [Download PNG →](./assets/logo.png)
+- [Download Dark →](./assets/logo-rect.png)
 - [Download With Label →](./assets/logo&label.png)
 - [Download all assets](./assets/Brand.zip)
 
@@ -24,19 +24,19 @@ Helixbox represents innovation, security, and accessibility in DeFi. Our brand e
 <div className="logo-showcase" style={{ padding: "2rem", backgroundColor: "#FFFFFF", borderRadius: "8px", marginBottom: "1rem" }}>
 
 ![alt text](./assets/Banner-Card.svg)
-![alt text](./assets/Logo.png) ![alt text](./assets/Logo.svg) 
+![alt text](./assets/logo.png) ![alt text](./assets/logo.svg) 
 
-![circle](./assets/Logo-circle.png) ![circle-svg](./assets/Logo-circle.svg) 
+![circle](./assets/logo-circle.png) ![circle-svg](./assets/logo-circle.svg) 
 
-![rectangle](./assets/Logo-rect.png) ![rectangle-svg](./assets/Logo-rect.svg) 
+![rectangle](./assets/logo-rect.png) ![rectangle-svg](./assets/logo-rect.svg) 
 
-![with label](./assets/Logo&label2.png) ![with label svg](./assets/Logo&label2.svg)
+![with label](./assets/logo&label2.png) ![with label svg](./assets/logo&label2.svg)
 </div>
 
 
 
 <div className="logo-showcase" style={{ padding: "2rem", backgroundColor: "#0A0A0A", borderRadius: "8px", marginBottom:"2rem"  }}>
 
-![with label Dark](./assets/Logo&label.png)
-![with label Dark svg](./assets/Logo&label.svg)
+![with label Dark](./assets/logo&label.png)
+![with label Dark svg](./assets/logo&label.svg)
 </div>
