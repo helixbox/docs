@@ -303,7 +303,10 @@ export default function Home(): ReactNode {
                 onClick={() => {
                   /** open AI plugin */
                   //@ts-ignore
-                  window?.fcWidget?.open();
+                  // window?.fcWidget?.open();
+                  // const targetButton = document.getElementById('myframe1').contentWindow.document.getElementById('x')
+                  const targetButton = document.getElementById("dify-chatbot-bubble-button");
+                  targetButton?.click()
                 }}
                 className="button button--secondary"
                 style={styles.actionButton}

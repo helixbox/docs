@@ -8,7 +8,7 @@ tags:
   - funding
   - deposit
   - payment
-slug: /funding/add-funds
+
 ---
 
 import Tabs from '@theme/Tabs';
@@ -16,42 +16,34 @@ import TabItem from '@theme/TabItem';
 
 # Add Funds to Your Account
 
-:::tip Related
+:::note Important
+Before making any deposit, please ensure you:
+  - [Understand the fees](#fees)
+  - Select the [correct network](#payment-methods)
+  - Review [transaction limits](#limits)
+
 Looking to withdraw? See our [Cash Out Guide](./cash-out-crypto)
-:::
 
-## Available Payment Methods {#payment-methods}
+::: 
 
-### 1. Crypto Deposits
-- Direct crypto transfers from external wallets
-- Supported networks: Ethereum, BSC, Polygon, etc.
-- Real-time deposit confirmation
-
-### 2. Credit/Debit Card
-- Instant purchases via our payment partners
-- Supported currencies: USD, EUR, etc.
-- Competitive processing fees
-
-### 3. Bank Transfer
-- SEPA (EU region)
-- Wire Transfer
-- Processing time: 1-3 business days
-
+<details>
+<summary>
 ## How to Add Funds
-
+</summary>
 <Tabs>
 <TabItem value="crypto" label="Crypto Deposit">
-
-1. Go to "Add Funds" in your dashboard
-2. Select "Crypto Deposit"
-3. Choose the network and token
-4. Copy the deposit address or scan QR code
-5. Send funds from your external wallet
-6. Wait for network confirmation
-
-:::warning
-Always double-check the network and address before sending
-:::
+  ![Withdraw from Exchange](../assets/funding/receive.png)
+  1. Login with [helix.box/overview](http://helix.box/overview) from a browser on your computer.
+  2. Click the **Receive** button at overview page or directly visit [helix.box/receive](http://helix.box/receive) from a browser on your computer.
+  3. Select a way to deposit **Withdraw from Exchange** or **Transfer from Web3 Wallet**
+    <Tabs>
+      <TabItem value="exchange" label="Withdraw from Exchange">
+        ![Withdraw from Exchange](../assets/funding/funding-exchange.png)
+      </TabItem>  
+       <TabItem value="we3-wallet" label="Transfer from Web3 Wallet">
+         ![Transfer from Web3 Wallet](../assets/funding/funding-wallet.png)
+      </TabItem>  
+    </Tabs>
 </TabItem>
 
 <TabItem value="card" label="Card Payment">
@@ -88,26 +80,51 @@ Bank transfers may take 1-3 business days to process
 | Crypto | Network Min | No Limit | Network Speed |
 | Card | $20 | $5,000/day | Instant |
 | Bank | $100 | $50,000/day | 1-3 days |
+:::warning Security Best Practices
+  - ⛑️ Always double-check the network and address before sending
+  - 🔍 Verify first/last 5 characters of deposit addresses
+  - ⚠️ Watch for phishing - Always check domain is https://helix.box
+  - 📧 Never share private keys or seed phrases via email
+  - 🦶 View real-time fee calculations before confirming any transaction
+  - 📈 After depositing, track your transaction through:
+    1. **Blockchain Explorers** Click transaction hash to view on chain-specific explorers
+    2. **Transaction history** (coming soon)
+    3. **Email Alerts** (coming soon)
+:::
+</details>
+<details>
+<summary> 
+
 
 ## Fees
+</summary>
 
 - Crypto deposits: Network fees only
 - Card payments: 2.5% processing fee
 - Bank transfers: Varies by region
+</details>
 
-::: tip
-View real-time fee calculations before confirming any transaction
-:::
 
-:::info See Also
-- [Privacy & Security](/docs/introduction/privacy-security)
-- [Smart Wallet vs EOA](/docs/faqs/smart-wallet-faq)
-- [Common Questions](/docs/faqs/faqs)
-:::
 
-:::warning Important
-Before making any deposit, please ensure you:
-- [Understand the fees](#fees)
-- Select the [correct network](#payment-methods)
-- Review [transaction limits](#limits)
-::: 
+## Supported Networks & Tokens {#supported-networks}
+- Supported networks: 
+  - <font style={{display:'flex', gap:'16px'}}><img src="https://helixbox-ui-stg2.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F131%2Flarge%2Fbase-network.png%3F1720533039&w=64&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" height="32" width="32" alt="Base"/> Base</font>
+  - <font style={{display:'flex', gap:'16px'}}><img src="https://helixbox-ui-stg2.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F33%2Flarge%2FAO_logomark.png%3F1706606717&w=32&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" height="32" width="32" alt="Arbitrum one"/> Arbitrum one</font>
+  - <font style={{display:'flex', gap:'16px'}}><img src="https://helixbox-ui-stg2.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F15%2Flarge%2Fpolygon_pos.png%3F1706606645&w=64&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" height="32" width="32" alt="Polygon"/> Polygon</font>
+  - <font style={{display:'flex', gap:'16px'}}><img src="https://helixbox-ui-stg2.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F41%2Flarge%2Foptimism.png%3F1706606778&w=48&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" height="32" width="32" alt="Optimism"/> Optimism</font>
+- Supported token: 
+  1. Auto-recognition for all ERC20 standard tokens
+  2. Custom token support (via contract address)
+  3. Cross-chain auto-conversion for major stablecoins (USDT/USDC/DAI)
+
+
+
+
+### What's Next?
+- [🔐 Privacy & Security](./privacy-security) - Helixbox's privacy policies, security
+- [💳 Smart Wallet vs EOA](/docs/faqs/smart-wallet-faq)
+- [🔄 Swap](/docs/swap) - Token exchange and trading
+- [⚡ Bridge](/docs/bridge) - Cross-chain transfers
+- [❓ FAQs](/docs/faqs/smart-wallet-faq) - Common questions and answers
+
+
