@@ -51,8 +51,14 @@ Helixbox is built on three core principles:
 
 ## Security Architecture {#security}
 
-### Core Security Model
+### Core Protections
 
+| Layer            | Technology       | Functionality                      |
+|-------------------|------------------|------------------------------------|
+| Authentication    | Privy            | Secure social login integration   |
+| Smart Contracts   | Safe\{Wallet\}    | Transaction validation & execution| 
+| Infrastructure    | AWS              | DDoS protection & traffic filtering|
+| Monitoring        | Sentry           | Real-time anomaly detection        |
 
 #### 1. Smart Account Security
 - Non-custodial design
@@ -67,7 +73,11 @@ Helixbox is built on three core principles:
 - 24/7 monitoring
 
 ### Transaction Safety {#transactions}
-
+1. Enable all security features
+2. Use hardware wallet integration
+3. Monitor transaction history
+4. First/last 5 characters of wallet addresses match
+5. HTTPS certificate (https://helix.box)
 
 #### Protection Measures
 - Multi-signature support
@@ -93,21 +103,11 @@ We partner with industry leaders for enhanced security:
 
 ## Best Practices {#best-practices}
 
-:::tip Security Recommendations
-1. **Enable All Security Features**
-   - Two-factor authentication
-   - Email notifications
-   - Transaction confirmations
-
-2. **Protect Your Account**
-   - Use strong passwords
-   - Keep recovery info safe
-   - Monitor activity regularly
-
-3. **Safe Trading**
-   - Verify addresses
-   - Start with small amounts
-   - Check transaction details
+:::tip Security Best Practices
+1. Enable all available security features
+2. Use hardware wallet integration for large holdings
+3. Monitor transaction history weekly
+4. Verify addresses through multiple channels
 :::
 
 ## Incident Response {#incidents}

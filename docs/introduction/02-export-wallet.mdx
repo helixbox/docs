@@ -24,14 +24,18 @@ Helixbox uses a combination of technologies to provide a secure and user-friendl
 - **Safe\{Wallet\}**: For smart contract wallet implementation
 - **EOA Wallet**: As the owner of your smart wallet
 :::note[Disclaimer]
-Helixbox does not store or manage any account information. Our wallet system is powered by Privy. For more details about the security architecture and implementation, please visit [Privy's Security Documentation](https://docs.privy.io/guide/security/).
+Helixbox does not store or manage any account information. Our wallet system is powered by Privy. 
+For more details about the security architecture and implementation,
+please visit [Privy's Security Documentation](https://docs.privy.io/guide/security/).
 :::
 
 ## Wallet Architecture
 
-Your Helixbox wallet consists of two main components:
-1. **Base EOA Wallet**: The owner wallet that controls your smart wallet
-2. **Smart Wallet**: A Safe\{Wallet\} contract controlled by your base wallet
+Your Helixbox wallet combines:
+1. **Base EOA Wallet** (Owner)  
+   Controls the smart wallet
+2. **Smart Wallet** (Safe\{Wallet\})  
+   Manages assets and transactions
 
 
 
@@ -62,12 +66,12 @@ Most users don't need to export their wallet. Helixbox provides all necessary fe
 :::
 <details>
 <summary>
-### Exporting Smart Wallet Owner Private Key 
+### Exporting [Smart Wallet Owner]'s Private Key 
 </summary>
 
 For advanced users who want to manage their smart wallet directly through Safe\{Wallet\}:
 1. Access your account settings by clicking on your avatar in the top right corner
-2. Click on "Export Private Key" in the menu
+2. Click on "**Export Private Key**" in the menu
 3. A secure modal will appear where you can:
    - View and copy your private key
    - View and copy your seed phrase
