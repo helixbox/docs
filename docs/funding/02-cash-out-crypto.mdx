@@ -13,97 +13,141 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Cash Out
+# Cash Out My Crypto
 
-## Withdrawal Methods
+<details>
+  <summary>
+  ## Cash Out My Crypto
+  </summary>
+  Coming soon
+</details>
 
-### 1. Crypto Withdrawal
-- Transfer to external wallets
-- Multiple network support
-- Real-time processing
+<details>
+  <summary>
+    ## Send Crypto to Other Wallets
+  </summary>
 
-### 2. Fiat Withdrawal
-- Bank transfer options
-- Supported currencies
-- Processing timeframes
+  Withdrawal Crypto from Heilxbox
+  
+  
+  1. **Login** :Visit [https://helix.box/overview](https://helix.box/overview) using a desktop browser
+  2. **Navigate to Send** : Click the **Send** button on the overview page, Or go directly to [https://helix.box/send](https://helix.box/send)
+  3. **Select Asset**: Choose cryptocurrency and confirm network compatibility
+  4. **Enter Details**: Specify amount (must exceed network minimum)
+  5. **Enter Recipient**: Input recipient wallet address
+  6. **Review & Confirm**:
+     - Check [network fees](#fee-processing-times)
+     - Verify processing time estimate
+     - Submit transaction
+  6. **Authentication**: (WalletConnect only) Sign transaction in connected wallet
 
-## How to Withdraw
+![Withdraw from Exchange](../assets/funding/send.png)
 
-<Tabs>
-<TabItem value="crypto" label="Crypto Withdrawal">
-
-1. Navigate to "Cash Out" section
-2. Select cryptocurrency and network
-3. Enter recipient address
-4. Specify amount
-5. Review network fees
-6. Confirm withdrawal
-
-::: warning Important
-- Verify the withdrawal address carefully
-- Check network fees before confirming
-- Ensure sufficient balance for fees
-:::
-</TabItem>
-
-<TabItem value="fiat" label="Fiat Withdrawal">
-
-1. Select "Fiat Withdrawal"
-2. Choose currency and payment method
-3. Enter bank details
-4. Specify amount
-5. Review fees and processing time
-6. Confirm withdrawal
-
-::: info
-- First-time fiat withdrawal may require KYC
-- Processing times vary by region and method
-:::
-</TabItem>
-</Tabs>
+</details>
 
 ## Withdrawal Limits
 
-| Method | Minimum | Maximum | Processing Time |
-|--------|----------|----------|-----------------|
-| Crypto | Network Min | Account Balance | Network Speed |
-| Fiat | $100 | $10,000/day | 2-5 business days |
+| Method  | Minimum     | Maximum          | Processing Time       |
+|---------|-------------|------------------|-----------------------|
+| Crypto  | Network Min | Account Balance  | Network Congestion    |
+| Fiat    | $--        | --/day      | 1-3 business days     |
 
-## Security Measures
+## Fees & Processing Times {#fee-processing-times}
 
-### Withdrawal Security
-- 2FA verification required
-- Email confirmation
-- Withdrawal address whitelist
-- 24-hour security lock on new addresses
+### Crypto Transactions
+- 🔹 Dynamic network fees based on real-time congestion
+- 🔸 Fee preview before transaction confirmation
+- 🔹 Typical confirmation times:
+  - Base: \<5 minutes
+  - Arbitrum: \<3 minutes
+  - Polygon: \<7 minutes
+  - Optimism: \<5 minutes
 
-### KYC Requirements
-- May be required for large withdrawals
-- Necessary for fiat withdrawals
-- One-time verification process
-
-## Fees & Processing Times
-
-### Crypto Withdrawals
-- Network fees apply
-- Fee varies by network congestion
-- Real-time fee calculation available
-
-### Fiat Withdrawals
-- Processing fee: 0.5% - 1.5%
-- Bank fees may apply
-- Currency conversion fees if applicable
-
-::: tip Best Practices
-1. Always double-check recipient details
-2. Consider network fees when choosing withdrawal network
-3. Keep withdrawal addresses whitelisted
-4. Maintain up-to-date KYC if required
+:::warning Security Protocols
+  - 🔒 Always verify:
+    - Recipient wallet supports both network **and** token
+    - First/last 5 characters of wallet addresses match
+    - HTTPS certificate (https://helix.box)
+   - 📈 After sending, track your transaction through:
+    1. **Blockchain Explorers** Click transaction hash to view on chain-specific explorers
+    2. **Transaction history** (coming soon)
+    3. **Email Alerts** (coming soon)
 :::
 
-## Support
+## Supported Networks & Tokens {#supported-networks}
 
-Need help with your withdrawal?
-- Check withdrawal status in transaction history
-- Contact support for assistance
-- Review our withdrawal FAQ 
+### Networks
+<div style={{display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '24px'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
+    <img 
+         src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F131%2Flarge%2Fbase-network.png%3F1720533039&w=64&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" 
+
+      width="32"
+      height="32" 
+      alt="Base Network Logo"
+      style={{objectFit: 'contain'}}
+    />
+    <span>Base</span>
+  </div>
+  
+  <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
+    <img 
+         src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F33%2Flarge%2FAO_logomark.png%3F1706606717&w=32&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" 
+
+      width="32"
+      height="32"
+      alt="Arbitrum Network Logo"
+      style={{objectFit: 'contain'}}
+    />
+    <span>Arbitrum One</span>
+  </div>
+
+  <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
+    <img 
+src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F15%2Flarge%2Fpolygon_pos.png%3F1706606645&w=64&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" 
+      width="32"
+      height="32"
+      alt="Polygon Network Logo"
+      style={{objectFit: 'contain'}}
+    />
+    <span>Polygon</span>
+  </div>
+
+  <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
+    <img 
+    src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F41%2Flarge%2Foptimism.png%3F1706606778&w=48&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR"    
+    width="32"
+      height="32"
+      alt="Optimism Network Logo"
+      style={{objectFit: 'contain'}}
+    />
+    <span>Optimism</span>
+  </div>
+</div>
+
+### Tokens
+- **Auto-Recognized Tokens**
+  - All ERC-20 standard tokens
+  - Native network tokens (ETH, MATIC, etc.)
+  - Major stablecoins (USDT, USDC, DAI)
+
+- **Custom Tokens**
+  - Add via contract address
+  - Manual verification required
+  - Example: `0x...` 
+
+:::tip Network Compatibility
+Always confirm the token contract address matches the selected network. Cross-chain transfers require bridge functionality.
+:::
+
+### What's Next?
+- [🔐 Privacy & Security](/docs/introduction/privacy-security) - Helixbox's privacy policies, security
+- [💰 Add Funds](/docs/funding/add-funds) - Buy and deposit crypto assets
+- [🔄 Swap](/docs/swap) - Token exchange and trading
+- [⚡ Bridge](/docs/bridge) - Cross-chain transfers
+- [❓ FAQs](/docs/faqs/smart-wallet-faq) - Common questions and answers
+
+
+:::tip Need Help?
+Can't find what you're looking for? Join our [Discord Community](https://discord.gg/6XyyNGugdE) for support!
+:::
