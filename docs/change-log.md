@@ -9,7 +9,7 @@ description:    Change Log
 
 ---
 ## 2025-02-17
-  - Dapp Markets 
+  - Dapps Market 
   - transaction history
   - Bug Fix & UI improve 
   - Token list extension 
