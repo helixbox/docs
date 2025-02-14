@@ -47,7 +47,7 @@ HelixBox is dedicated to empowering users by simplifying access to decentralized
 
 The HelixBox team is committed to expanding the marketplace with new features, more dApps, and enhanced capabilities. Developers are also encouraged to contribute their projects to the platform, fostering a growing ecosystem for all.
 
-- [🔐 Privacy & Security](./privacy-security) - Helixbox's privacy policies, security
+- [🔐 Privacy & Security](/docs/introduction/privacy-security) - Helixbox's privacy policies, security
 - [💰 Add Funds](/docs/funding/add-funds) - Buy and deposit crypto assets
 - [🔄 Swap](/docs/swap) - Token exchange and trading
 - [⚡ Bridge](/docs/bridge) - Cross-chain transfers
