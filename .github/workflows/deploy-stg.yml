@@ -20,6 +20,7 @@ jobs:
           script_install: yarn install
           script_build: yarn build
           preview_output: true
+          alias_domain: helixbox-docs-dev
           project_name: helixbox-docs
           enable_cache: true
           enable_notify_slack: true

@@ -21,6 +21,7 @@ jobs:
           script_install: yarn install
           script_build: yarn build
           preview_output: true
+          alias_domain: helixbox-docs
           project_name: helixbox-docs
           prod_mode: true
           enable_cache: true
