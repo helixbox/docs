@@ -1,9 +1,9 @@
 ---
 id: dapp-markets
-title: Dapps Markets
-label: Dapps Markets
+title: Dapps Market
+sidebar_label: Markets
 ---
-# Dapps Markets
+# Dapps Market
 
 # Introducing HelixBox dApp Marketplace
 
