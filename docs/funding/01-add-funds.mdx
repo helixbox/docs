@@ -3,105 +3,90 @@ id: add-funds
 title: Add Funds to Your Account
 sidebar_label: Add Funds
 description: Learn how to add funds to your Helixbox account using various payment methods
-keywords: [add funds, deposit, payment, crypto, fiat, Helixbox]
+keywords: [add funds, deposit, Crypto transfer, receive ERC20, fiat, Helixbox]
 tags:
   - funding
-  - deposit
+  - receive 
   - payment
-
+  - transfer
+  - crypto
+  - fiat
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Add Funds to Your Account
-
-:::note Important
-Before making any deposit, please ensure:
-- You [understand the fees](#fees)
-- You select the [correct network](#supported-networks)
-- You review [transaction limits](#transaction-limits)
-
-For withdrawals, see our [Cash Out Guide](./cash-out-crypto)
-::: 
-
-<details>
+<details open='true'>
 <summary>
-## How to Add Funds
+## How to Add Funds?
 </summary>
 <Tabs>
-<TabItem value="crypto" label="Crypto Deposit" default>
-  ![Crypto Deposit Interface](../assets/funding/receive.png)
+<TabItem value="crypto" label="Receive Crypto" default>
+  ### Receive Crypto
   1. **Login**: Visit [https://helix.box/overview](https://helix.box/overview) using a desktop browser
   2. **Navigate to Receive**: Click the **Receive** button on the overview page, or go directly to [https://helix.box/receive](https://helix.box/receive)
   3. **Select Asset**: Choose cryptocurrency and confirm network compatibility
   4. **Copy Address**:  
     - Click the copy icon next to your wallet address
     - Alternatively, scan the QR code
-  5. **Select Deposit Method**:  
+  ![Receive Crypto Interface](../assets/funding/receive.png)  
+  5. **Select Receive Method**:  
     <Tabs>
-      <TabItem value="exchange" label="Withdraw from Exchange">
+      <TabItem value="exchange" label="Exchange">
+        ### Receive Crypto from Exchange
         ![Withdraw from Exchange](../assets/funding/funding-exchange.png)
       </TabItem>  
-       <TabItem value="web3-wallet" label="Transfer from Web3 Wallet">
+       <TabItem value="web3-wallet" label="Web3 Wallet">
+        ### Receive Crypto from Web3 Wallet
          ![Transfer from Web3 Wallet](../assets/funding/funding-wallet.png)
       </TabItem>  
     </Tabs>
 </TabItem>
 
 <TabItem value="card" label="Card Payment">
-  ### Coming Soon
-  Currently only available through Coinbase integration
-
-  :::tip
-  Save your card securely for future purchases
-  :::
+  ### Card Payment (Coming Soon)
 </TabItem>
 
 <TabItem value="bank" label="Bank Transfer">
-  ### Coming Soon
-  Currently only available through Coinbase integration
+  ### Bank Transfer (Coming Soon)
 </TabItem>
 </Tabs>
+</details>
+:::tip Security Best Practices
+Before making any Assets Funding (Buy or Receive Crypto), please ensure:
+- 🔒 You double-check confirm the receive [wallet address](/docs/introduction/getting-started/#smart-wallet-address).
+  1. Verify first/last 5 characters of deposit addresses. 
+  2. Confirm domain is [https://helix.box](https://helix.box)  
+- 🔍 You select the [supported networks](#supported-networks) for transfers.
+- ⏱️ You review the real-time [fees](#fees), which include network, service, handling, and exchange rates
+- 📧 Never share private keys or seed phrases 
+- 📊 Track transactions through:
+    1. **Blockchain Explorers** (via transaction hash)
+    2. **Transaction History** (coming soon)
+    3. **Email Alerts** (coming soon)
 
-## Transaction Limits {#transaction-limits}
+For withdrawals(Cash-out or Send Crypto), see our [Cash Out Guide](./cash-out-crypto)
+::: 
+
+
+##  Transaction Limits {#transaction-limits}
 
 | Method  | Minimum     | Maximum          | Processing Time       |
 |---------|-------------|------------------|-----------------------|
 | Crypto  | Network Min | No Limit         | Network Congestion    |
 | Card    | $20         | $5,000/day       | Instant               |
 | Bank    | $100        | $50,000/day      | 1-3 business days     |
-:::warning Security Best Practices
-  - 🔒 Always double-check network and address before sending
-  - 🔍 Verify first/last 5 characters of deposit addresses
-  - 🌐 Confirm domain is [https://helix.box](https://helix.box)
-  - 📧 Never share private keys or seed phrases
-  - ⏱️ View real-time fee calculations before confirming
-  - 📊 Track transactions through:
-    1. **Blockchain Explorers** (via transaction hash)
-    2. **Transaction History** (coming soon)
-    3. **Email Alerts** (coming soon)
-:::
-</details>
-<details>
-<summary> 
-
 
 ## Fees
-</summary>
-
-- **Crypto Deposits**: Network fees only
+- **Receive Crypto**: Network fees only
 - **Card Payments**: 2.5% processing fee
 - **Bank Transfers**: Varies by region (0.5%-1.5%)
-</details>
 
 
+## Supported networks {#supported-networks}
 
-## Supported Networks & Tokens {#supported-networks}
-
-### networks
-
-<div style={{display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '24px'}}>
+<div style={{display: 'flex', flexDirection: 'column', gap: '12px', margin: '24px'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
     <img 
          src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-images.coingecko.com%2Fasset_platforms%2Fimages%2F131%2Flarge%2Fbase-network.png%3F1720533039&w=64&q=75&dpl=dpl_47wih5NBVEQx3mubAcjTSy18Q1AR" 
@@ -148,9 +133,12 @@ src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-image
     <span>Optimism</span>
   </div>
 </div>
+:::note Network Compatibility
+Always confirm the token contract address matches the selected network. Cross-chain transfers require bridge functionality.
+:::
 
 
-### Tokens
+### Supported Tokens
 - **Auto-Recognized Tokens**
   - All ERC-20 standard tokens
   - Native network tokens (ETH, MATIC, etc.)
@@ -161,9 +149,7 @@ src="https://helixbox-ui-dev.vercel.app/_next/image?url=https%3A%2F%2Fcoin-image
   - Manual verification required
   - Example: `0x...` 
 
-:::tip Network Compatibility
-Always confirm the token contract address matches the selected network. Cross-chain transfers require bridge functionality.
-:::
+
 
 ### What's Next?
 - [🔐 Privacy & Security](/docs/introduction/privacy-security) - Helixbox's privacy policies, security
