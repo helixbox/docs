@@ -42,6 +42,15 @@ const config: Config = {
         ],
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'labs',
+        path: 'labs',
+        routeBasePath: 'labs',
+        sidebarPath: './sidebars.ts',
+      },
+    ],
     
   ],
   presets: [
@@ -52,7 +61,6 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-
         },
         blog: false,
         //  {
@@ -96,13 +104,20 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'sidebar',
+          sidebarId: 'sidebarDocs',
           position: 'left',
           label: 'Docs',
-          hideable: true,
           activeBaseRegex: 'docs/(next|v8)',
-          baseUrl: '/docs/',
           to: '/docs/index',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'sidebarDocs',
+          docsPluginId:"labs",
+          position: 'left',
+          label: 'Labs',
+          // activeBaseRegex: 'labs/(next|v8)',
+          // to: '/labs',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
