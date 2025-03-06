@@ -229,6 +229,17 @@ const config: Config = {
       indexName: "helixbox",
     },
   } satisfies Preset.ThemeConfig,
+  scripts: [
+    {
+      src: 'js/ai.js',
+      async: false,
+    },
+    {
+      src: 'https://dify.helix.box/embed.min.js',
+      async: true,
+      id:"50BF6mXsnaB2kVMY"
+    },
+  ],
 };
 
 export default config;
