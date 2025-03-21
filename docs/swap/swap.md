@@ -6,7 +6,7 @@ id: swap
 
 * **Smart Wallet Interaction**
 
-    Interact with swap contracts using a smart wallet. No need for multiple authorization steps—temporary authorizations are granted for the required amounts only when necessary, reducing account security risks.
+    Interact with swap contracts using a Smart Wallet. No need for multiple authorization steps—temporary authorizations are granted for the required amounts only when necessary, reducing account security risks.
 
 * **Third-Party Aggregator Integration**
 
