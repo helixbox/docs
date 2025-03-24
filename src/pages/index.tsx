@@ -115,7 +115,7 @@ const FeatureList: FeatureItem[] = [
     description: 'Explore our DeFi products and services',
     links: [
       { text: 'Dapps Market', to: '/docs/markets/', emoji: '🛍️' },
-      { text: 'DeFi Premium', to: '/docs/category/defi-premium', emoji: '🏦' },
+      { text: 'Premium DeFi', to: '/docs/category/defi-premium', emoji: '🏦' },
     ],
   },
 ];
