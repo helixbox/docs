@@ -20,15 +20,16 @@ tags:
 
 ## What is Morpho?
 
-**Morpho** is a trustless and efficient lending primitive with permissionless market creation.
+**Morpho** is a trustless and efficient lending primitive with permissionless market creation.
 
 It enables the deployment of minimal and isolated lending markets by specifying:
 
-- one collateral asset,
-- one loan asset,
-- a Liquidation Loan To Value (LLTV),
-- an Interest Rate Model (IRM),
+- one collateral asset,  
+- one loan asset,  
+- a Liquidation Loan To Value (LLTV),  
+- an Interest Rate Model (IRM),  
 - and an oracle.
+
 
 The protocol is trustless and was designed to be more efficient and flexible than any other decentralized lending platform.
 
@@ -38,107 +39,76 @@ Morpho is a trustless lending protocol that offers greater efficiency and flexib
 
 ### Trustless
 
-**Immutable:** Morpho is not upgradable. The protocol will run and behave the same way forever.
+**Immutable:** Morpho is not upgradable. The protocol will run and behave the same way forever.
 
-**Governance-minimized:** Morpho Governance cannot halt the operation of a market or manage funds on users’ behalf, nor does it impose specific oracle implementations.
+**Governance-minimized:** Morpho Governance cannot halt market operations, manage user funds, or impose specific oracle implementations.
 
-**Simple:** The protocol consists of only 650 lines of Solidity code. This simplicity makes it particularly easy to understand and safe.
+**Simple:** The protocol consists of only 650 lines of Solidity code. This simplicity makes it particularly easy to understand and safe.
 
 ### Efficient
 
-**Higher collateralization factors:** Morpho’s Lending markets are isolated. Unlike multi-asset pools, liquidation parameters for each market can be set without consideration of the most risky asset in the basket. Therefore, suppliers can lend at a much higher LLTV while being exposed to the same market risk as when supplying to a multi-asset pool with a lower LLTV.
+**Higher collateralization factors:** Morpho’s Lending markets are isolated.
 
-**Improved interest rates:** Collateral assets are not lent out to borrowers. This alleviates the liquidity requirements for liquidations to function properly in current lending platforms and allows Morpho to offer higher capital utilization. Moreover, Morpho is fully autonomous, so it does not need to introduce fees to cover costs for platform maintenance.
+**Improved interest rates:** Collateral assets are not lent out to borrowers.
 
-**Low gas consumption:** Morpho is a remarkably simple protocol built in a singleton smart contract that groups every possible primitive market in the same place. This reduces gas consumption by 50% compared to existing lending platforms.
+**Low gas consumption:** Morpho is a remarkably simple protocol built in a singleton smart contract that groups every possible primitive market in the same place.
 
-### Flexible
+### Flexible​
 
-**Permissionless market creation:** Morpho features permissionless asset listing. Markets with any collateral and loan assets and any risk parametrization can be created. The protocol also supports permissioned markets, enabling a broader range of use cases, including RWAs and institutional markets.
+**Permissionless market creation:** Morpho features permissionless asset listing.
 
-**Permissionless risk management:** Morpho allows for additional layers of logic to enrich its markets. More specifically, risk management can be built on top of the protocol to simplify the user experience for lenders.
+**Permissionless risk management:** Morpho allows for additional layers of logic to enrich its markets.
 
-For example, risk experts could build noncustodial vaults for lenders to earn yield passively. These vaults can allocate depositors liquidity to multiple markets on their behalf. This allows users to pass off the responsibility of risk management to the vault rather than doing it themselves.
+**Developer-friendly:** Morpho features several modern smart contract patterns.  [Learn More](https://docs.morpho.org/morpho/concepts/benefits-of-morpho)
 
-**Developer-friendly:** Morpho features several modern smart contract patterns. Callbacks enable liquidators and sophisticated users to chain advanced actions without any flash loans. Account management facilitates gasless interactions and account abstractions. Free flash loans on the singleton contract allow anyone to access the assets of all markets simultaneously with a single call, as long as they are repaid in the same transaction.
-
-## What is Morpho’s **Interest Rate Models**?
+## What are Morpho’s **Interest Rate Models?**
 
 Morpho is an Interest Rate Model (IRM) agnostic protocol, meaning it can support any interest rate model for its markets. In Morpho, the interest borrowers pay in a given market is defined by the IRM chosen at market creation among a governance-approved set.
 
 Initially, this set is composed of one immutable IRM, the AdaptiveCurveIRM.
 
-[AdaptiveCurveIRM](https://docs.morpho.org/morpho/concepts/irm/#the-adaptivecurveirm)
+The AdaptiveCurveIRM is engineered to maintain the ratio of borrowed assets over supplied assets, commonly called utilization, close to a target of 90%. [Learn More](https://docs.morpho.org/morpho/concepts/irm/)
 
-The AdaptiveCurveIRM is engineered to maintain the ratio of borrowed assets over supplied assets, commonly called utilization, close to a target of 90%.
+[![image.png](https://docs.morpho.org/img/morpho-blue/curve-mechanism-01.png)](https://docs.morpho.org/img/morpho-blue/adaptive-curve-irm.mp4)
 
-In Morpho, the collateral supplied is not rehypothecated. Removing this systemic risk removes the liquidity constraints imposed by liquidation needs. It enables more efficient markets with higher target utilization of capital and lower penalties for illiquidity, resulting in better rates for both lenders and borrowers.
-
-As with every parameter of a Morpho Market, the IRM address is immutable. This means that neither governance nor market creators can change it at any given time. As such, the AdaptiveCurveIRM is designed to adapt autonomously to market conditions, including changes in interest rates on other platforms and, more broadly, any shifts in supply and demand dynamics.
-
-Its adaptability enables it to perform effectively across any asset, market, and condition, making it highly suitable for Morpho's permissionless market creation. [Learn more](https://docs.morpho.org/morpho/concepts/irm)
-
-## What is a performance fee?
+## What is the performance fee?
 
 The Morpho Vaults protocol itself is governance-less, meaning Morpho governance is not involved in the operations of the protocol or individual Morpho Vaults.
 
-A Morpho Vault is governed by the owner of the smart contract. As explained in the [Role section](https://docs.morpho.org/morpho-vaults/concepts/roles), the owner can also assign one curator, one guardian, and multiple allocators to help manage the vault.
+A Morpho Vault is governed by the owner of the smart contract. As explained in the [Role section](https://docs.morpho.org/morpho-vaults/concepts/roles), the owner can also assign one curator, one guardian, and multiple allocators to help manage the vault.
 
-Morpho DAO can’t take fees on Morpho Vaults, but Vault owners can set a performance fee for their Morpho Vault. The fee works by taking a percentage of the interest generated by the Vault. The maximum performance fee is 50%.
+Morpho DAO can’t take fees on Morpho Vaults but Vaults owners can set a performance fee to their Morpho Vault. The fee is a percentage of the interest generated by the vault. The maximum performance fee is 50%.
 
-## What are Morpho Vaults?
+## **What are Morpho Vaults?**
 
-**Morpho Vaults** is a protocol for permissionless lending vaults built on top of the Morpho protocol.
+**Morpho Vaults** is a protocol for permissionless lending vaults built on top of the Morpho protocol.
 
-Morpho Vaults serve two types of users. The MetaMorpho Factory allows risk experts to spin up noncustodial lending vaults, and Morpho Vaults provide users with a simpler way to lend on Morpho.
+It serves two types of users. Risk experts using the MetaMorpho Factory to spin up noncustodial lending vaults, and everyday users with a simpler way to lend on Morpho.
 
-### Type 1: For Lenders
-
-Morpho Vaults offer users the **same passive experience** as traditional lending pools with the following notable improvements.
-
-### Curated Risk Profiles
-
-Morpho Vaults offer a range of vaults with various risk levels instead of the traditional one-size-fits-all approach. This allows users to choose vaults that align with their general risk preferences/appetite. In traditional lending, pools are exposed to the riskiest asset in the pool. With Morpho Vaults, a lender can avoid exposure to long-tail assets by depositing in a vault that only lends against blue chip collateral.
-
-### Better Yields
-
-Earn better yields from Morpho’s capital-efficient markets. Interest earned by suppliers is optimized by dynamically rebalancing across multiple markets with the best risk-return ratio.
-
-### Transparent
-
-Morpho Vaults are noncustodial with immutable logic and verifiable on-chain allocations. Risk curators are encouraged to share their processes with users, giving them more insight into the risk models and computations.
-
-### Type 2: For Risk Experts/Protocols
-
-Morpho Vaults pave the way for a new approach to risk management that is better for both risk experts and users.
-
-### Service users, not a DAO
-
-Morpho Vaults enable risk protocols and experts to serve users directly instead of consulting for DAOs. This approach is a more scalable business model and is better aligned with users.
-
-### Permissionless infrastructure
-
-Requires no code and is audited, lowering barriers to entry. Risk experts can create revenue-generating products with limited costs and effort. Benefit from Morpho SDK, front-end, rewards distribution, and other tooling.
-
-![Morpho Vaults](https://docs.morpho.org/img/metamorpho/morpho-vaults-3.png)
+![](https://docs.morpho.org/img/metamorpho/morpho-vaults-3.png)
 
 ## How is the net APY calculated?
 
-To get the net APY as displayed in the Morpho Interface, one needs to understand the following:
+To get the net APY as displayed in the Morpho Interface, one needs to understand the following.
 
 $$
 \text{Native APY} + \text{Rewards APR} + \text{MORPHO Tokens}
 $$
 
-### Why Rewards APR?
+## Why Rewards APR?
 
 The distinction between APY and APR is that APY takes into account the effect of compounding interest, while APR does not. In the case of rewards, the APR is the most relevant metric to consider, as rewards are not reinvested in users' positions.
 
-## What are rewards?
+## What are Rewards?
 
-Rewards are incentives provided by the Morpho DAO, market creators, and/or curators to users, encouraging them to interact with Morpho markets.
+Rewards are incentives provided by the Morpho DAO, market creators and/or curators to users, encouraging them to interact with Morpho markets.
 
-The claimability of rewards earned through Morpho's rewards programs is based on an epoch system. Currently, epochs are weekly; this period is due to be shortened in the near future. When an epoch ends, the rewards accumulated during the previous epoch become claimable. There is no deadline to claim the rewards earned.
+The claimability of rewards earned through Morpho's rewards programs is based on an epoch system. Currently, epochs are weekly, this period is due to be shortened in the near future. When an epoch ends, the rewards accumulated during the previous epoch become claimable. There is no deadline to claim the rewards earned.
+
+## What is Gauntlet?
+
+Gauntlet is a crypto-native economic modeling and research firm specializing in treasury and risk management, incentive optimization, and mechanism design. Gauntlet uses battle-tested techniques from algorithmic trading to help protocols manage risk, optimize revenue, and design better incentives. Gauntlet simulation models inform parameter decisions for protocols of all sizes, including the leading DeFi protocols.  
+
 
 <details>
 <summary>
