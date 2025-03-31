@@ -289,7 +289,7 @@ export default function Home(): ReactNode {
             <div className="col col--6">
               <p>Can't find what you are looking for?</p>
               <Link
-                to="mailto:hello@helix.box"
+                to="mailto:hello@helixbox.ai"
                 className="button button--primary"
                 style={styles.actionButton}
               >
