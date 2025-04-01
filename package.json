@@ -1,5 +1,5 @@
 {
-  "name": "helix.box-docs",
+  "name": "Helixbox-docs",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,7 +15,7 @@
     "typecheck": "tsc"
   },
   "authors": [
-    "hello@helix.box"
+    "hello@helixbox.ai"
   ],
   "license": "MIT",
   "dependencies": {
