@@ -9,7 +9,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://docs.helix.box",
+  url: "https://docs.helixbox.ai",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -138,12 +138,12 @@ const config: Config = {
        { title: " ",
         items: [
           { 
-            html:`<a href="https://helix.box" alt="Helixbox"><img src="/img/logo.png" alt="Helixbox" height="22" />
+            html:`<a href="https://helixbox.ai" alt="Helixbox"><img src="/img/logo.png" alt="Helixbox" height="22" />
             </a>`, // title: "App",
             // items: [
             //   {
             //     label: "Helixbox",
-            //     to: "https://helix.box",
+            //     to: "https://helixbox.ai",
             //   },
             // ],
           },
@@ -157,19 +157,15 @@ const config: Config = {
         items: [
           {
             label: "Helixbox",
-            to: "https://helix.box/",
+            to: "https://helixbox.ai/",
           },
           {
             label: "Bridge",
-            to: "https://bridge.helix.box/",
+            to: "https://bridge.helixbox.ai/",
           },
           {
             label: "XToken BaaS",
-            to: "https://xtoken.helix.box/",
-          },
-          {
-            label: "Liquidity Solver",
-            to: "https://helix.box/liquidity-solver",
+            to: "https://xtoken.helixbox.ai/",
           },
         ],
       },
@@ -189,7 +185,7 @@ const config: Config = {
             {
               label: "Email",
               icon:"fab fa-envelope",
-              href: "mailto:hello@helix.box",
+              href: "mailto:hello@helixbox.ai",
             },
           
           ],
@@ -199,19 +195,19 @@ const config: Config = {
           items: [
             {
               label: "Privacy Policy",
-              to: "https://helix.box/docs/Privacy_Policy.html",
+              to: "https://helixbox.ai/docs/Privacy_Policy.html",
             },
             {
               label: "Terms of Use",
-              to: "https://helix.box/docs/Terms_of_Use.html",
+              to: "https://helixbox.ai/docs/Terms_of_Use.html",
             },
             {
               label: "Cookies Policy",
-              to: "https://helix.box/docs/Cookies_Policy.html",
+              to: "https://helixbox.ai/docs/Cookies_Policy.html",
             },
             {
               label: "3rd Party Services",
-              to: "https://helix.box/docs/3rd_Party_Services.html",
+              to: "https://helixbox.ai/docs/3rd_Party_Services.html",
             },
           ],
         },
@@ -235,7 +231,7 @@ const config: Config = {
       async: false,
     },
     {
-      src: 'https://dify.helix.box/embed.min.js',
+      src: 'https://dify.helixbox.ai/embed.min.js',
       async: true,
       id:"50BF6mXsnaB2kVMY"
     },
